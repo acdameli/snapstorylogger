@@ -15,9 +15,8 @@ fi
 
 HAS_SNAP_DOWNLOADER_CONTAINER=$($DOCKER ps -a | grep "$DOCKER_CONTAINER")
 if [ -n "$HAS_SNAP_DOWNLOADER_CONTAINER" ]; then
-    echo "'$HAS_SNAP_DOWNLOADER_CONTAINER'"
     echo "$DOCKER_CONTAINER already exists, starting it up again"
-    $DOCKER start $DOCKER_CONTAINER
+    $DOCKER start "$DOCKER_CONTAINER"
 else
 
     PROJECT_ROOT=$(git rev-parse --show-toplevel)
