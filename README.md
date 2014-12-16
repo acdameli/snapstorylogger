@@ -1,5 +1,7 @@
-Docker + Composer = Awesome
-===========================
+Keep logs of snapchat stories
+=============================
+
+Props to [JorgenPhi](https://github.com/JorgenPhi) and thanks for [JorgenPhi/php-snapchat](https://github.com/JorgenPhi/php-snapchat). Same goes to the docker, composer and symfony/cilex peepz, but everybody's using your stuff so more props to JorgenPhi.
 
 You must have bash and docker to use this project. Tested on OSX using boot2docker v1.3.1
 
