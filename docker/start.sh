@@ -8,4 +8,4 @@ fi
 cd /app
 # composer install
 echo "starting snap story downloader"
-php index.php $SNAPCHAT_USERNAME $SNAPCHAT_PASSWORD
+php index.php stories:log $SNAPCHAT_USERNAME $SNAPCHAT_PASSWORD "/app/stories.json" "/app/$(date +%Y%m%d)"

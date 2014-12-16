@@ -41,3 +41,5 @@ ALL THE IMAGES IT JUST DOWNLOADED
 This project mounts $PROJECT_ROOT/src to /app in the container and also mounts $PROJECT_ROOT/docker to /docker.
 Any changes you make to this code is avialable to the container when next it is run.
 Also, any data written to the src directory in the container can be viewed from the host machine.
+
+An update to use Cilex was applied. You can now customize the locations for file writes and where the log of downloaded stories is kept. This will require modifications to docker/start.sh.
