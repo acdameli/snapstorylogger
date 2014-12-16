@@ -1,0 +1,11 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/JorgenPhi/php-snapchat.git"
+    }
+  ],
+  "require": {
+    "jorgenphi/php-snapchat": "dev-master"
+  }
+}

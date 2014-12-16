@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "72ec478270bdc39c082dcfeddd58a736",
+    "packages": [
+        {
+            "name": "jorgenphi/php-snapchat",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JorgenPhi/php-snapchat.git",
+                "reference": "c34f418ad11d177a7328fefb185c3731831f3406"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JorgenPhi/php-snapchat/zipball/c34f418ad11d177a7328fefb185c3731831f3406",
+                "reference": "c34f418ad11d177a7328fefb185c3731831f3406",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mcrypt": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Stelljes",
+                    "email": "iam@danielstelljes.net"
+                }
+            ],
+            "description": "A PHP library for the Snapchat API",
+            "keywords": [
+                "snapchat"
+            ],
+            "support": {
+                "source": "https://github.com/JorgenPhi/php-snapchat/tree/master",
+                "issues": "https://github.com/JorgenPhi/php-snapchat/issues"
+            },
+            "time": "2014-07-01 04:02:23"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "jorgenphi/php-snapchat": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
