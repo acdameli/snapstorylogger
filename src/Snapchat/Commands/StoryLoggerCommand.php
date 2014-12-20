@@ -70,11 +70,13 @@ class StoryLoggerCommand extends BaseCommand {
         $stories = $snapchat->getFriendStories();
         foreach ($stories as $story) {
             if (!isset($story_log[$story->id])) {
-                $file = ($story->media_type = 0) ? "{$path}/{$story->id}.jpg" : "{$path}/{$story->id}.mov";
                 $data = $snapchat->getStory($story->media_id, $story->media_key, $story->media_iv);
-                file_put_contents($file, $data);
-                $snapchat->markStoryViewed($story->id);
-                $story_log[$story->id] = ['file' => $file, 'date' => time(), 'raw' => $story];
+                if (false !== $data) {
+                    $file = ($data[0] == chr(0xFF) && $data[1] == chr(0xD8)) ? "{$path}/{$story->id}.jpg" : "{$path}/{$story->id}.mov";
+                    file_put_contents($file, $data);
+                    $snapchat->markStoryViewed($story->id);
+                    $story_log[$story->id] = ['file' => $file, 'date' => time(), 'raw' => $story];
+                }
             }
         }
 
